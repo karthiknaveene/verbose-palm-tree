@@ -24,12 +24,12 @@ pipeline {
                 echo 'Registering the metadata'
                 echo 'Another echo to make the pipeline a bit more complex'
                 registerBuildArtifactMetadata(
-                    name: "Demo-jenkins-runs-BT-feature-1",
+                    name: "artifact-1",
                     version: "1.0.1",
                     type: "docker",
-                    url: "http://localhost:4001",
-                    digest: "6f637064707039346163663237383761",
-                    label: "Internal-demo-BT-artifact-Prod"
+                    url: "http://localhost:1111",
+                    digest: "6f637064707039346163663237383938",
+                    label: "preprod,test"
                 )
             }
         }
