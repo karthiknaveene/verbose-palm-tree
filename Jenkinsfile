@@ -24,7 +24,7 @@ pipeline {
                 echo 'Registering the metadata'
                 echo 'Another echo to make the pipeline a bit more complex'
                 registerBuildArtifactMetadata(
-                    name: "Demo-jenkins-runs-BT",
+                    name: "Demo-jenkins-runs-BT-feature-1",
                     version: "1.0.1",
                     type: "docker",
                     url: "http://localhost:4001",
@@ -51,3 +51,4 @@ pipeline {
         }
     }
 }
+
